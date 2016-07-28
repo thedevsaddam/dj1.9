@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body{
+            background-color: wheat;
+            color: darkblue;
+            font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+            font-size: medium;
+            letter-spacing: 1.5px;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h5> Post list </h5>
+    <span>Execution time: {{ time }}</span>
+    <ol>
+        {% for post in posts %}
+            <li>
+                <a href="{% url 'details' post.id %}">{{  post.title }}</a>
+            </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
