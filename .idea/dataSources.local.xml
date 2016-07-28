@@ -4,5 +4,9 @@
     <data-source name="Django default" uuid="52fb9996-aa56-4208-b19c-999d4e782695">
       <auth-required>false</auth-required>
     </data-source>
+    <data-source name="Sqlite (Xerial) - db.sqlite3" uuid="2246c725-249c-43d6-b5b8-e7e93ccc2453">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+    </data-source>
   </component>
 </project>
